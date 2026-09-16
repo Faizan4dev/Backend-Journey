@@ -21,31 +21,7 @@ EJS
 UUID
 method-override
 HTML/CSS
-📁 Project Structure
-RESTful_API/
-│
-├── public/
-│   └── CSS/
-│
-├── views/
-│   ├── index.ejs
-│   ├── new.ejs
-│   ├── detail.ejs
-│   └── edit.ejs
-│
-├── index.js
-├── package.json
-└── package-lock.json
 
-🔄 RESTful Routes
-Method	Route	Purpose
-GET	/posts	Display all posts
-GET	/posts/new	Show form to create a post
-POST	/posts	Create a new post
-GET	/posts/:id	Display a specific post
-GET	/posts/:id/edit	Show edit form
-PATCH	/posts/:id	Update post content
-DELETE	/posts/:id	Delete a post
 
 **🧠 Concepts Practiced**
 Express
