@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Threads</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+    <h1>Mini Threads</h1>
+    <% for(thread of threads) { %>
+        <div class="thread">
+            <div class="thread-header">
+                <img src="<%= thread.dp %>" id="dp" alt="<%= thread.name %>">
+                <h3><i><%= thread.name %></i></h3>
+                <form method="GET" action="/new">
+                    <button>Add new post</button>
+                </form>
+            </div>
+            <hr/>
+            <img id="post" src="<%= thread.dp %>" alt="<%= thread.name %>">
+            <hr/>
+            <div class="thread-footer">
+                <h3> <i> <%= thread.caption %></i></h3> &nbsp; &nbsp;
+                <a href="/posts/<%=thread.id %>/edit"><button>Edit</button></a>
+                <form method="post" action="/posts/<%= thread.id %>?_method=DELETE">
+                    <button>Delete</button>
+                </form>
+            </div>
+        </div>
+    <% } %>
+</body>
+</html>

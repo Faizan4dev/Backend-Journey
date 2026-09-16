@@ -1,0 +1,57 @@
+
+.thread{
+    margin  :auto;
+    height : 420px;
+    width : 400px;
+    border : 2px solid black; 
+    border-top : 5px solid black;
+    margin-top : 20px;
+}
+.thread-header{
+    display : flex;
+    align-items : center;
+    margin :10px 20px;
+}
+
+.thread-header form{
+    margin-left : auto;
+}
+.thread-header h3{
+    margin-left : 10px;
+}
+
+h1{
+    text-align : center;
+}
+
+#post{
+    height : 250px;
+    width : 300px;
+    padding-left : 50px;
+}
+/* h2{
+    display : flex;
+    align-items : center;
+    margin : 10px;
+} */
+
+
+#dp{
+    left : 10px;
+    height : 50px;
+    width : 50px;
+    border-radius : 50%;
+}
+.thread-footer{
+    text-align : center;
+    display : flex;
+    align-items : center;
+    margin :0 20px;
+    /* justify-content : space-between; */
+}
+.thread-footer form{
+    margin-left : auto;
+}
+.thread-footer a{
+    margin-left : auto;
+}

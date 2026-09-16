@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Caption</title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+    <h1>Mini Threads</h1>
+        <div class="thread">
+            <div class="thread-header">
+                <img src="<%= thread.dp %>" id="dp" alt="<%= thread.name %>">
+                <h3><i><%= thread.name %></i></h3>
+            </div>
+            <hr/>
+            <img id="post" src="<%= thread.dp %>" alt="<%= thread.name %>">
+            <hr/>
+            <form method="POST" action="/posts/<%= thread.id %>?_method=PATCH">
+                <textarea name="caption"><%= thread.caption %></textarea>
+                <button>Update Caption</button>
+            </form>
+        </div>
+
+</body>
+</html>
